@@ -32,40 +32,42 @@ html, body {
   opacity: 0;
 }
 
-/* Custom very light background colors */
-.bg-rose-25 {
-  background-color: #fefcfc;
-}
+/* Custom very light background colors - Force include in build */
+@layer utilities {
+  .bg-rose-25 {
+    background-color: #fefcfc !important;
+  }
 
-.bg-orange-25 {
-  background-color: #fffcfa;
-}
+  .bg-orange-25 {
+    background-color: #fffcfa !important;
+  }
 
-.bg-amber-25 {
-  background-color: #fffdf9;
-}
+  .bg-amber-25 {
+    background-color: #fffdf9 !important;
+  }
 
-.from-rose-25 {
-  --tw-gradient-from: #fefcfc;
-  --tw-gradient-to: rgb(254 252 252 / 0);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-}
+  .from-rose-25 {
+    --tw-gradient-from: #fefcfc !important;
+    --tw-gradient-to: rgb(254 252 252 / 0) !important;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important;
+  }
 
-.via-orange-25 {
-  --tw-gradient-to: rgb(255 252 250 / 0);
-  --tw-gradient-stops: var(--tw-gradient-from), #fffcfa, var(--tw-gradient-to);
-}
+  .via-orange-25 {
+    --tw-gradient-to: rgb(255 252 250 / 0) !important;
+    --tw-gradient-stops: var(--tw-gradient-from), #fffcfa, var(--tw-gradient-to) !important;
+  }
 
-.to-amber-25 {
-  --tw-gradient-to: #fffdf9;
-}
+  .to-amber-25 {
+    --tw-gradient-to: #fffdf9 !important;
+  }
 
-.border-rose-100\/30 {
-  border-color: rgb(255 228 230 / 0.3);
-}
+  .border-rose-100\/30 {
+    border-color: rgb(255 228 230 / 0.3) !important;
+  }
 
-.bg-rose-25\/90 {
-  background-color: rgb(254 252 252 / 0.9);
+  .bg-rose-25\/90 {
+    background-color: rgb(254 252 252 / 0.9) !important;
+  }
 }
 
 /* Mobile viewport fixes */
