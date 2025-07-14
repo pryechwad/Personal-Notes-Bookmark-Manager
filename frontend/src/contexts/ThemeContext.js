@@ -27,8 +27,13 @@ export function ThemeProvider({ children }) {
     document.documentElement.classList.add(newTheme)
   }
 
+  // Always render children to prevent SSR mismatch
   if (!mounted) {
-    return <div className="opacity-0">{children}</div>
+    return (
+      <ThemeContext.Provider value={{ theme: 'light', toggleTheme: () => {}, mounted: false }}>
+        {children}
+      </ThemeContext.Provider>
+    )
   }
 
   return (
@@ -41,7 +46,12 @@ export function ThemeProvider({ children }) {
 export const useTheme = () => {
   const context = useContext(ThemeContext)
   if (!context) {
-    throw new Error('useTheme must be used within a ThemeProvider')
+    // Return default values during SSR to prevent build errors
+    return {
+      theme: 'light',
+      toggleTheme: () => {},
+      mounted: false
+    }
   }
   return context
 }
