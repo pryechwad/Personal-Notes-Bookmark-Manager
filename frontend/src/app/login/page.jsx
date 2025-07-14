@@ -190,7 +190,7 @@ export default function LoginPage() {
               <div className="mt-6">
                 <Link href="/register">
                   <Button
-                    className="w-full h-10 sm:h-12 bg-white/50 dark:bg-slate-700/50 border border-white/30 hover:bg-white/70 dark:hover:bg-slate-600/50 transition-all duration-300 rounded-xl font-semibold text-sm sm:text-base"
+                    className="w-full h-10 sm:h-12 bg-gray-100 dark:bg-slate-700/50 border border-gray-300 dark:border-slate-600 hover:bg-gray-200 dark:hover:bg-slate-600/50 transition-all duration-300 rounded-xl font-semibold text-sm sm:text-base text-gray-700 dark:text-gray-200"
                   >
                     Create new account
                   </Button>

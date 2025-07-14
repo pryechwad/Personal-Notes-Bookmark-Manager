@@ -9,7 +9,7 @@ export default function PublicNavbar() {
   const { theme, toggleTheme } = useTheme()
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-rose-25/90 dark:bg-slate-900/90 backdrop-blur-md border-b border-rose-100/30 dark:border-slate-700/50">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-indigo-50/80 dark:bg-slate-900/80 backdrop-blur-sm">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-14 sm:h-16">
           <Link href="/" className="flex items-center space-x-3 group">
@@ -26,7 +26,7 @@ export default function PublicNavbar() {
               variant="ghost"
               size="sm"
               onClick={toggleTheme}
-              className="w-10 h-10 rounded-xl hover:bg-rose-50 dark:hover:bg-slate-800/50"
+              className="w-10 h-10 rounded-xl hover:bg-indigo-100 dark:hover:bg-slate-800/50"
             >
               {theme === 'dark' ? (
                 <Sun className="w-5 h-5 text-yellow-500" />
@@ -37,7 +37,7 @@ export default function PublicNavbar() {
 
             
             <Link href="/login">
-              <Button variant="ghost" className="hidden md:flex items-center space-x-2 px-3 sm:px-4 py-2 rounded-xl hover:bg-rose-50 dark:hover:bg-slate-800/50">
+              <Button variant="ghost" className="hidden md:flex items-center space-x-2 px-3 sm:px-4 py-2 rounded-xl hover:bg-indigo-100 dark:hover:bg-slate-800/50">
                 <LogIn className="w-4 h-4" />
                 <span>Sign In</span>
               </Button>

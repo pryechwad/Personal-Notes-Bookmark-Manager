@@ -5,7 +5,7 @@ import { BookOpen, Heart, Github, Twitter, Mail } from 'lucide-react'
 
 export default function HomeFooter() {
   return (
-    <footer className="bg-rose-25/90 dark:bg-slate-900/90 backdrop-blur-md border-t border-rose-100/30 dark:border-slate-700/50">
+    <footer className="bg-indigo-50/80 dark:bg-slate-900/80 backdrop-blur-sm">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
           {/* Brand */}
@@ -22,7 +22,7 @@ export default function HomeFooter() {
               Transform your digital life with our beautiful, intelligent workspace. Capture ideas, organize thoughts, and save important links all in one place.
             </p>
             <div className="flex space-x-3 sm:space-x-4">
-              <a href="#" className="w-8 h-8 sm:w-10 sm:h-10 bg-rose-50 dark:bg-slate-800 rounded-xl flex items-center justify-center hover:bg-pink-500 hover:text-white transition-colors">
+              <a href="#" className="w-8 h-8 sm:w-10 sm:h-10 bg-indigo-100 dark:bg-slate-800 rounded-xl flex items-center justify-center hover:bg-pink-500 hover:text-white transition-colors">
                 <Github className="w-4 h-4 sm:w-5 sm:h-5" />
               </a>
               <a href="#" className="w-10 h-10 bg-rose-50 dark:bg-slate-800 rounded-xl flex items-center justify-center hover:bg-blue-500 hover:text-white transition-colors">
@@ -58,7 +58,7 @@ export default function HomeFooter() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-rose-100 dark:border-slate-700 mt-6 sm:mt-8 pt-6 sm:pt-8 flex flex-col sm:flex-row justify-between items-center">
+        <div className="mt-6 sm:mt-8 pt-6 sm:pt-8 flex flex-col sm:flex-row justify-between items-center">
           <p className="text-gray-500 dark:text-gray-400 text-sm">
             © 2024 NotesBook. All rights reserved.
           </p>

@@ -43,10 +43,10 @@ export default function RegisterPage() {
   return (
     <div>
       <PublicNavbar />
-      <div className="min-h-screen bg-gradient-to-br from-rose-50 via-orange-50 to-amber-50 dark:from-slate-900 dark:via-purple-900 dark:to-indigo-900 px-4 sm:px-6 lg:px-8 relative overflow-hidden pt-16">
+      <div className="min-h-screen bg-gradient-to-br from-indigo-50 via-white to-purple-50 dark:from-slate-900 dark:via-slate-800 dark:to-indigo-900 px-4 sm:px-6 lg:px-8 relative overflow-hidden pt-16">
         {/* Background Elements */}
-        <div className="absolute top-20 left-20 w-32 h-32 bg-gradient-to-r from-pink-400 to-rose-400 rounded-full opacity-10 animate-pulse"></div>
-        <div className="absolute bottom-20 right-20 w-24 h-24 bg-gradient-to-r from-orange-400 to-yellow-400 rounded-full opacity-10 animate-float"></div>
+        <div className="absolute top-20 left-20 w-32 h-32 bg-gradient-to-r from-indigo-400 to-purple-400 rounded-full opacity-10 animate-pulse"></div>
+        <div className="absolute bottom-20 right-20 w-24 h-24 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full opacity-10 animate-float"></div>
         
         <div className="flex items-center justify-center min-h-screen py-12">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto items-center">
@@ -209,7 +209,7 @@ export default function RegisterPage() {
                 <Link href="/login">
                   <Button
                     variant="outline"
-                    className="w-full h-12 border-slate-300 dark:border-slate-600 hover:bg-slate-50 dark:hover:bg-slate-700 transition-colors"
+                    className="w-full h-12 bg-gray-100 dark:bg-slate-700/50 border-gray-300 dark:border-slate-600 hover:bg-gray-200 dark:hover:bg-slate-700 transition-colors text-gray-700 dark:text-gray-200"
                   >
                     Sign in instead
                   </Button>
