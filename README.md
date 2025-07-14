@@ -1,8 +1,7 @@
-# NotesBook - Your Digital Memory Palace 🧠✨
+# NotesBook - Your Digital Memory Palace 
 
 A beautiful, full-featured personal notes and bookmark manager built with modern web technologies. Organize your thoughts, save your favorite links, and never lose an idea again.
 
-![NotesBook Hero](https://via.placeholder.com/1200x600/667eea/ffffff?text=NotesBook+-+Digital+Memory+Palace)
 
 ## ✨ Features
 
