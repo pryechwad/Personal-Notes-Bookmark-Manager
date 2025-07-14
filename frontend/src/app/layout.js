@@ -1,4 +1,4 @@
-import '@/styles/globals.css'
+import './globals.css'
 import { AuthProvider } from '@/contexts/AuthContext'
 import { ThemeProvider } from '@/contexts/ThemeContext'
 import Navbar from '@/components/layout/Navbar'
@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
         
       </head>
-      <body className="overflow-x-hidden">
+      <body className="overflow-x-hidden min-h-screen bg-background text-foreground">
         <ThemeProvider>
           <AuthProvider>
             <div className="flex flex-col min-h-screen">
