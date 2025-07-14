@@ -1,4 +1,4 @@
-import './globals.css'
+import '@/styles/globals.css'
 import { AuthProvider } from '@/contexts/AuthContext'
 import { ThemeProvider } from '@/contexts/ThemeContext'
 import Navbar from '@/components/layout/Navbar'
